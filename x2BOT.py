@@ -45,5 +45,4 @@ async def on_member_join(member):
         return None
 
   
-access_token = os.environ["BOT_TOKEN"]
-app.run(access_token)
+app.run(os.environ['token'])
