@@ -4,7 +4,7 @@ from discord.utils import get
 
 app = discord.Client()
 
-token = "NzYxOTU0NzgzNTQwMDE5MjIw.X3iHsA.JbjavSb8clVVHOOJMnPc1agMfzM"
+
 calcResult = 0
 
 @app.event
@@ -44,4 +44,6 @@ async def on_member_join(member):
     except:
         return None
 
-app.run(token)
+  
+acces_token = os.environ["BOT_TOKEN"]
+app.run(acces_token)
